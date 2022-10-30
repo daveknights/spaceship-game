@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Canvas Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="stars">
+            <canvas id="gameCanvas" width="800" height="450" tabindex="0"></canvas>
+        </div>
+        <p class="instructions">Fly through the middle of the <span class="green">green</span> rings using
+            <span class="key">&#9664;</span> and <span class="key">&#9654;</span>
+            keys.
+        </p>
+        <p class="instructions">Press the
+            <span class="key">&nbsp;&nbsp; Space bar &nbsp;&nbsp;</span>
+            to start.
+        </p>
+    </main>
+    <aside>
+        <div class="citation">
+            <ul>
+                <li><a href="https://unsplash.com/photos/Q_RBVFFXR_g" target="_blank">Space</a> photo by:
+                    <cite><a href="https://unsplash.com/@weirick" target="_blank">
+                        Jake Weirick</a> from Unsplash
+                    </cite>
+                </li>
+                <li><a href="https://pixabay.com/illustrations/portal-wormholes-space-sci-fi-7358123/" target="_blank">Portals</a> photo by:
+                    <cite><a href="https://pixabay.com/users/adisresic-9188734/" target="_blank">
+                        Adis Resic</a> from Pixabay
+                    </cite>
+                </li>
+                <li><a href="https://pixabay.com/photos/spaceship-science-fiction-forward-3628969/" target="_blank">Spaceship</a> photo by:
+                    <cite><a href="https://pixabay.com/users/papafox-7788876/" target="_blank">
+                        Peter Fischer</a> from Pixabay
+                    </cite>
+                </li>
+            </ul>        
+        </div>
+    </aside>    
+    
+    <img id="spaceship" src="images/ship.png" alt="Spaceship" hidden>
+    <img id="leftRing" src="images/left-ring.png" alt="Left ring" hidden>
+    <img id="centerRing" src="images/center-ring.png" alt="Center ring" hidden>
+    <img id="rightRing" src="images/right-ring.png" alt="Right ring" hidden>
+    <script src="script.js"></script>
+</body>
+</html>
